@@ -2,10 +2,10 @@
   <div id="jumbotron">
     <div class="container">
       <AppHeader />
-      <div class="row justify-content-end">
-        <div class="col-6">
-          <h1>Logistic that goes further.</h1>
-          <p>
+      <div class="row justify-content-end mt-5">
+        <div class="col-6 p-5">
+          <h1 class="fw-bolder text-white">Logistic that goes further.</h1>
+          <p class="text-secondary">
             For 20 years working with the most innovative in the field of
             transport.
           </p>
@@ -32,7 +32,7 @@ export default {
 
 <style lang="scss" scoped>
 #jumbotron {
-  height: 1000px;
+  height: calc(100vh - 56px);
   background-image: url("./../assets/img/jumbo.jpg");
 }
 </style>
