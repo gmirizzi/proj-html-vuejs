@@ -7,7 +7,7 @@
           <a class="nav-link text-reset" href="#">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-reset" href="#">services</a>
+          <a class="nav-link text-reset" href="#services">services</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-reset" href="#">skills</a>

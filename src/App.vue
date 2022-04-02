@@ -40,5 +40,9 @@ export default {
 @import "~bootstrap/scss/bootstrap";
 #app {
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+  section {
+    height: 100vh;
+  }
 }
 </style>
