@@ -38,9 +38,14 @@ export default {
 
 <style lang="scss">
 @import "~bootstrap/scss/bootstrap";
+@import "./assets/css/variables";
 #app {
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
+  .etichetta {
+    color: $blueLagoon;
+    font-weight: bold;
+  }
   section {
     height: 100vh;
   }
