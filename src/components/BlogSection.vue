@@ -1,6 +1,6 @@
 <template>
   <section id="blog">
-    <div class="container">
+    <div class="container py-5">
       <div class="etichetta">our editorial content</div>
       <h1>Latest News</h1>
       <div class="d-flex justify-content-between">
