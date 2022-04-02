@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-4">
           <div id="contacts">
-            <h1>NEXGEN</h1>
+            <nexgen-brand />
             <P
               >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
               minus labore quo consequatur voluptatibus saepe et dolorum,
@@ -61,8 +61,10 @@
 
 <script>
 import FooterBar from "./FooterBar.vue";
+import NexgenBrand from "./NexgenBrand.vue";
+
 export default {
-  components: { FooterBar },
+  components: { NexgenBrand, FooterBar },
   name: "AppFooter",
 };
 </script>
