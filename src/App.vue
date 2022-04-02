@@ -45,6 +45,7 @@ export default {
   .etichetta {
     color: $blueLagoon;
     font-weight: bold;
+    text-transform: uppercase;
   }
   section {
     height: 100vh;
