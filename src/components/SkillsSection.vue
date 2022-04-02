@@ -1,5 +1,5 @@
 <template>
-  <section id="skills" class="bg-dark text-white">
+  <section id="skills" class="bg-dark text-white py-5">
     <div class="container">
       <div class="row">
         <div class="col-6">
@@ -11,6 +11,27 @@
             non fugit odio, molestiae, esse nisi laborum laboriosam aut nesciunt
             recusandae distinctio repellendus?
           </p>
+          <div class="skill d-flex">
+            <div class="circle">%</div>
+            <div>
+              <h2>skill</h2>
+              <p>descrizione</p>
+            </div>
+          </div>
+          <div class="skill d-flex">
+            <div class="circle">%</div>
+            <div>
+              <h2>skill</h2>
+              <p>descrizione</p>
+            </div>
+          </div>
+          <div class="skill d-flex">
+            <div class="circle">%</div>
+            <div>
+              <h2>skill</h2>
+              <p>descrizione</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
