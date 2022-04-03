@@ -3,22 +3,58 @@
     <div class="container">
       <div class="row row-cols-6">
         <div class="col">
-          <img src="./../assets/img/logo-5.png" alt="logo" class="opacity-50" />
+          <a href="#">
+            <img
+              src="./../assets/img/logo-5.png"
+              alt="logo"
+              class="opacity-50"
+            />
+          </a>
         </div>
         <div class="col">
-          <img src="./../assets/img/logo-1.png" alt="logo" class="opacity-50" />
+          <a href="#">
+            <img
+              src="./../assets/img/logo-1.png"
+              alt="logo"
+              class="opacity-50"
+            />
+          </a>
         </div>
         <div class="col">
-          <img src="./../assets/img/logo-2.png" alt="logo" class="opacity-50" />
+          <a href="#">
+            <img
+              src="./../assets/img/logo-2.png"
+              alt="logo"
+              class="opacity-50"
+            />
+          </a>
         </div>
         <div class="col">
-          <img src="./../assets/img/logo-3.png" alt="logo" class="opacity-50" />
+          <a href="#">
+            <img
+              src="./../assets/img/logo-3.png"
+              alt="logo"
+              class="opacity-50"
+            />
+          </a>
         </div>
         <div class="col">
-          <img src="./../assets/img/logo-4.png" alt="logo" class="opacity-50" />
+          <a href="#">
+            <img
+              src="./../assets/img/logo-4.png"
+              alt="logo"
+              class="opacity-50"
+            />
+          </a>
         </div>
         <div class="col">
-          <img src="./../assets/img/logo-5.png" alt="logo" class="opacity-50" />
+          <a href="#">
+            <img
+              src="./../assets/img/logo-5.png"
+              alt="logo"
+              class="opacity-50"
+            />
+          </a>
         </div>
       </div>
     </div>
