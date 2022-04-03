@@ -3,25 +3,8 @@
     <nexgen-brand class="navbar-brand" />
     <div>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
-        <li class="nav-item">
-          <a class="nav-link text-reset" href="#">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-reset" href="#services">services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-reset" href="#">skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-reset" href="#">partners</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-reset" href="#">blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-reset btn btn-primary" href="#"
-            >get in touch</a
-          >
+        <li v-for="item in arrLinks" :key="item.name" class="nav-item">
+          <a class="nav-link text-reset" :href="item.link">{{ item.name }}</a>
         </li>
       </ul>
     </div>
@@ -34,6 +17,36 @@ import NexgenBrand from "./NexgenBrand.vue";
 export default {
   name: "AppHeader",
   components: { NexgenBrand },
+  data() {
+    return {
+      arrLinks: [
+        {
+          name: "home",
+          link: "",
+        },
+        {
+          name: "serivices",
+          link: "#services",
+        },
+        {
+          name: "skills",
+          link: "#skills",
+        },
+        {
+          name: "partners",
+          link: "#partners",
+        },
+        {
+          name: "blog",
+          link: "#blog",
+        },
+        {
+          name: "get in touch",
+          link: "#get-in-touch",
+        },
+      ],
+    };
+  },
 };
 </script>
 
