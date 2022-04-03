@@ -42,6 +42,10 @@ export default {
 #app {
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
+  .btn {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
   .etichetta {
     color: $blueLagoon;
     font-weight: bold;
