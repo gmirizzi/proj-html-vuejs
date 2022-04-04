@@ -1,5 +1,6 @@
 <template>
   <div id="partners">
+    <circles-component />
     <div class="container">
       <div class="row row-cols-6">
         <div class="col">
@@ -62,7 +63,9 @@
 </template>
 
 <script>
+import CirclesComponent from "./CirclesComponent.vue";
 export default {
+  components: { CirclesComponent },
   name: "PartnersSection",
 };
 </script>
@@ -75,6 +78,7 @@ export default {
   display: flex;
   align-items: center;
   background-color: $saltpan;
+  position: relative;
   img {
     height: 25px;
   }

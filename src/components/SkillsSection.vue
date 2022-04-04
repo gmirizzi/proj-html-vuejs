@@ -1,5 +1,6 @@
 <template>
   <section id="skills" class="text-white py-5">
+    <circles-component />
     <div class="container">
       <div class="row">
         <div class="col-6 pe-5">
@@ -96,7 +97,9 @@
 </template>
 
 <script>
+import CirclesComponent from "./CirclesComponent.vue";
 export default {
+  components: { CirclesComponent },
   name: "SkillsSection",
 };
 </script>
@@ -110,6 +113,7 @@ section {
   background-size: 50%;
   background-repeat: no-repeat;
   background-color: #111117ff;
+  position: relative;
   h1 span {
     background-color: $blueLagoonST;
   }
