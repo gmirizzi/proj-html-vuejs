@@ -43,7 +43,7 @@
               Tenetur voluptatem vel adipisci repudiandae, mollitia
               reprehenderit doloremque quisquam est qui voluptatum voluptatibus!
             </p>
-            <div id="info" class="mt-">
+            <div id="info">
               <div id="phone" class="d-flex align-items-center">
                 <font-awesome-icon
                   class="rounded-circle p-2 me-2"

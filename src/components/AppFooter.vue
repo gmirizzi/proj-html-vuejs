@@ -1,15 +1,29 @@
 <template>
-  <footer class="pt-5 text-white">
+  <footer class="pt-5">
     <div class="container py-5">
-      <div class="row">
-        <div class="col-4">
+      <div class="row gx-5">
+        <div class="col-4 text-secondary pe-5">
           <div id="contacts">
-            <nexgen-brand />
-            <P
-              >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-              minus labore quo consequatur voluptatibus saepe et dolorum,
-              architecto rem ab obcaecati nihil, nostrum distinctio velit odio
-              quos itaque porro nulla!</P
+            <nexgen-brand class="mb-5" />
+            <P class="my-4"
+              >A Functional HTML Template for Corporate & Business</P
+            >
+            <div id="phone" class="d-flex align-items-center">
+              <font-awesome-icon class="me-2" icon="fa-solid fa-phone" />
+              +1 (305) 1234-5678
+            </div>
+            <div id="mail" class="d-flex align-items-center my-3">
+              <font-awesome-icon class="me-2" icon="fa-solid fa-envelope" />
+              hello@example.com
+            </div>
+            <div id="address" class="d-flex align-items-center">
+              <font-awesome-icon class="me-2" icon="fa-solid fa-location-dot" />
+              Main Avenue, 987
+            </div>
+            <a
+              href="#get-in-touch"
+              class="btn btn-outline-primary text-uppercase text-white mt-4"
+              >get in touch</a
             >
           </div>
         </div>
@@ -17,37 +31,41 @@
           <div class="row">
             <div class="col-4">
               <div class="overlay h-100 w-100 p-4 rounded-3">
-                <h2>section</h2>
+                <h2 class="fs-4 fw-bold text-white">section</h2>
                 <ul>
-                  <li><a href="">link</a></li>
-                  <li><a href="">link</a></li>
-                  <li><a href="">link</a></li>
-                  <li><a href="">link</a></li>
-                  <li><a href="">link</a></li>
+                  <li><a class="text-secondary" href="">link</a></li>
+                  <li><a class="text-secondary" href="">link</a></li>
+                  <li><a class="text-secondary" href="">link</a></li>
+                  <li><a class="text-secondary" href="">link</a></li>
+                  <li><a class="text-secondary" href="">link</a></li>
                 </ul>
               </div>
             </div>
             <div class="col-4">
               <div class="overlay h-100 w-100 p-4 rounded-3">
-                <h2>section</h2>
+                <h2 class="fs-4 fw-bold text-white">section</h2>
                 <ul>
-                  <li><a href="">link</a></li>
-                  <li><a href="">link</a></li>
-                  <li><a href="">link</a></li>
-                  <li><a href="">link</a></li>
-                  <li><a href="">link</a></li>
+                  <li><a class="text-secondary" href="">link</a></li>
+                  <li><a class="text-secondary" href="">link</a></li>
+                  <li><a class="text-secondary" href="">link</a></li>
+                  <li><a class="text-secondary" href="">link</a></li>
+                  <li><a class="text-secondary" href="">link</a></li>
                 </ul>
               </div>
             </div>
             <div class="col-4">
               <div class="overlay h-100 w-100 p-4 rounded-3">
-                <h2>section</h2>
+                <h2 class="fs-4 fw-bold text-white">section</h2>
                 <ul>
-                  <li><a href="">link</a></li>
-                  <li><a href="">link</a></li>
-                  <li><a href="">link</a></li>
-                  <li><a href="">link</a></li>
-                  <li><a href="">link</a></li>
+                  <li><a class="text-secondary" href="">link</a></li>
+                  <li><a class="text-secondary" href="">link</a></li>
+                  <li><a class="text-secondary" href="">link</a></li>
+                  <li><a class="text-secondary" href="">link</a></li>
+                  <li class="text-secondary">
+                    <a class="ms-2 text-reset text-decoration-none" href=""
+                      >Information</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
@@ -76,6 +94,10 @@ footer {
   background-size: cover;
   .overlay {
     background-color: rgba(0, 0, 0, 0.2);
+    li::marker {
+      content: ">";
+      font-size: 1.5em;
+    }
   }
 }
 </style>
