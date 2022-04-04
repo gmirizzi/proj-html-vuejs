@@ -10,7 +10,9 @@
           Every week we publish content about what is best in the business
           world.
         </p>
-        <button class="btn btn-primary text-uppercase">See All</button>
+        <button class="btn btn-primary text-uppercase" @click="seeAll">
+          See All
+        </button>
       </div>
       <div class="row row-cols-3 pb-5 gy-3">
         <div
@@ -79,6 +81,13 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    seeAll() {
+      this.arrCards.forEach((el) => {
+        el.visibile = true;
+      });
+    },
   },
 };
 </script>
