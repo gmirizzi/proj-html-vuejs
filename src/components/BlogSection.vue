@@ -1,26 +1,28 @@
 <template>
-  <section id="blog">
+  <section id="blog" class="pt-5">
     <div class="container py-5">
       <div class="etichetta">our editorial content</div>
-      <h1>Latest News</h1>
-      <div class="d-flex justify-content-between">
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur
-          voluptatem nesciunt ad voluptates, dolore quibusdam mollitia
-          voluptatum quos temporibus vel nam alias! Laudantium necessitatibus
-          numquam, quae debitis eius eos voluptatibus.
+      <h1 class="fw-bold my-4">
+        Latest <span class="py-1 px-3 rounded-2">News</span>
+      </h1>
+      <div class="d-flex justify-content-between align-items-center mb-5">
+        <p class="text-secondary">
+          Every week we publish content about what is best in the business
+          world.
         </p>
-        <button class="btn btn-primary">See All</button>
+        <button class="btn btn-primary text-uppercase">See All</button>
       </div>
-      <div class="row row-cols-3">
+      <div class="row row-cols-3 pb-5">
         <div class="col">
-          <div class="card bg-dark text-white">
+          <div class="card border-0 bg-dark text-white">
             <img
               src="./../assets/img/news-1.jpg"
               class="card-img opacity-50"
               alt="..."
             />
-            <div class="card-img-overlay d-flex align-items-end text-center">
+            <div
+              class="card-img-overlay pb-5 px-4 d-flex align-items-end text-center"
+            >
               <p class="card-text fw-bold">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -30,13 +32,15 @@
           </div>
         </div>
         <div class="col">
-          <div class="card bg-dark text-white">
+          <div class="card border-0 bg-dark text-white">
             <img
               src="./../assets/img/news-2.jpg"
               class="card-img opacity-50"
               alt="..."
             />
-            <div class="card-img-overlay d-flex align-items-end text-center">
+            <div
+              class="card-img-overlay pb-5 px-4 d-flex align-items-end text-center"
+            >
               <p class="card-text fw-bold">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -46,13 +50,15 @@
           </div>
         </div>
         <div class="col">
-          <div class="card bg-dark text-white">
+          <div class="card border-0 bg-dark text-white">
             <img
               src="./../assets/img/news-3.jpg"
               class="card-img opacity-50"
               alt="..."
             />
-            <div class="card-img-overlay d-flex align-items-end text-center">
+            <div
+              class="card-img-overlay pb-5 px-4 d-flex align-items-end text-center"
+            >
               <p class="card-text fw-bold">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -75,4 +81,15 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped lang="scss">
+@import "./../assets/css/_variables.scss";
+
+h1 span {
+  background-color: $blueLagoonST;
+  color: $blueLagoon;
+}
+.card,
+.card-img {
+  border-radius: 1rem;
+}
+</style>
