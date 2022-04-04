@@ -10,7 +10,7 @@
           voluptatum quos temporibus vel nam alias! Laudantium necessitatibus
           numquam, quae debitis eius eos voluptatibus.
         </p>
-        <button class="btn">See All</button>
+        <button class="btn btn-primary">See All</button>
       </div>
       <div class="row row-cols-3">
         <div class="col">
