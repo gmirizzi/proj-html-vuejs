@@ -6,8 +6,9 @@ import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faClock, faPhone, faEnvelope, faLocationDot);
+library.add(faClock, faPhone, faEnvelope, faLocationDot, faArrowUp);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 

@@ -52,6 +52,13 @@
       </div>
     </div>
     <footer-bar />
+    <a id="go-up" href="#infobar">
+      <div
+        class="p-1 bg-dark opacity-50 rounded-circle d-flex justify-content-center align-items-center"
+      >
+        <font-awesome-icon icon="fa-solid fa-arrow-up" />
+      </div>
+    </a>
   </footer>
 </template>
 
@@ -163,11 +170,23 @@ footer {
   background-image: url("./../assets/img/bg-10.jpg");
   background-position: center;
   background-size: cover;
+  position: relative;
   .overlay {
     background-color: rgba(0, 0, 0, 0.2);
     li::marker {
       content: ">";
       font-size: 1.5em;
+    }
+  }
+  #go-up {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    color: #0c1418ff;
+    div {
+      height: 2em;
+      width: 2em;
+      font-size: 1.5rem;
     }
   }
 }
