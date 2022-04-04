@@ -1,15 +1,14 @@
 <template>
   <section id="get-in-touch" class="d-flex align-items-center">
     <div class="container">
-      <div class="row">
+      <div class="row gx-5">
         <div class="col-8">
           <div class="etichetta">send a message</div>
-          <h1 class="fw-bold">Get in Touch</h1>
-          <p class="text-secondary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            quibusdam quidem accusamus vitae magni quas illum consequuntur
-            fugiat dignissimos quasi ipsa, cum numquam voluptatem minus aut vel
-            temporibus non. Autem.
+          <h1 class="fw-bold my-4">
+            Get in <span class="py-1 px-3 rounded-2">Touch</span>
+          </h1>
+          <p class="text-secondary mb-5">
+            We will respond to your message as soon as possible.
           </p>
           <form>
             <div class="row gy-3">
@@ -31,25 +30,45 @@
                 <textarea class="form-control" placeholder="Message"></textarea>
               </div>
             </div>
-            <button class="btn text-uppercase">send</button>
+            <button class="btn btn-primary mt-4 text-uppercase">send</button>
           </form>
         </div>
         <div class="col-4">
           <div id="contacts">
-            <h2>Example Inc.</h2>
+            <h2 class="fw-bold fs-5 mb-3">Example Inc.</h2>
             <p class="text-secondary">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Provident amet doloremque consectetur, at ut voluptate corrupti,
-              rem officiis dolorum dolorem natus vitae labore modi in
-              repudiandae nisi enim et hic?
             </p>
             <p class="text-secondary">
               Tenetur voluptatem vel adipisci repudiandae, mollitia
               reprehenderit doloremque quisquam est qui voluptatum voluptatibus!
-              Temporibus ducimus consequatur adipisci deserunt quidem. Nihil eos
-              distinctio maxime provident rerum excepturi ullam, quas doloremque
-              illum.
             </p>
+            <div id="info" class="mt-">
+              <div id="phone" class="d-flex align-items-center">
+                <font-awesome-icon
+                  class="rounded-circle p-2 me-2"
+                  icon="fa-solid fa-phone"
+                />
+                +1 (305) 1234-5678
+              </div>
+              <div id="mail" class="d-flex align-items-center my-3">
+                <font-awesome-icon
+                  class="rounded-circle p-2 me-2"
+                  icon="fa-solid fa-envelope"
+                />
+                hello@example.com
+              </div>
+              <div id="address" class="d-flex align-items-center">
+                <font-awesome-icon
+                  class="rounded-circle p-2 me-2"
+                  icon="fa-solid fa-location-dot"
+                />
+                Main Avenue, 987
+              </div>
+              <a href="#" class="btn btn-outline-primary text-uppercase mt-3"
+                >view map</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -68,5 +87,26 @@ export default {
 
 #get-in-touch {
   background-color: $saltpan;
+  h1 span {
+    background-color: $blueLagoonST;
+    color: $blueLagoon;
+  }
+  input,
+  select,
+  textarea {
+    background-color: #dce2dbff;
+  }
+  select {
+    color: #6c758b;
+  }
+  textarea {
+    height: 150px;
+  }
+  #info {
+    color: $blueLagoon;
+    .rounded-circle {
+      background-color: $blueLagoonST;
+    }
+  }
 }
 </style>
