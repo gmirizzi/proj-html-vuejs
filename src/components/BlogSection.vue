@@ -12,57 +12,24 @@
         </p>
         <button class="btn btn-primary text-uppercase">See All</button>
       </div>
-      <div class="row row-cols-3 pb-5">
-        <div class="col">
+      <div class="row row-cols-3 pb-5 gy-3">
+        <div
+          v-for="(card, index) in arrCards"
+          :key="index"
+          class="col"
+          v-show="card.visibile"
+        >
           <div class="card border-0 bg-dark text-white">
             <img
-              src="./../assets/img/news-1.jpg"
+              :src="require(`./../assets/img/` + card.img)"
               class="card-img opacity-50"
               alt="..."
             />
             <div
               class="card-img-overlay pb-5 px-4 d-flex align-items-end text-center"
             >
-              <p class="card-text fw-bold">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card border-0 bg-dark text-white">
-            <img
-              src="./../assets/img/news-2.jpg"
-              class="card-img opacity-50"
-              alt="..."
-            />
-            <div
-              class="card-img-overlay pb-5 px-4 d-flex align-items-end text-center"
-            >
-              <p class="card-text fw-bold">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card border-0 bg-dark text-white">
-            <img
-              src="./../assets/img/news-3.jpg"
-              class="card-img opacity-50"
-              alt="..."
-            />
-            <div
-              class="card-img-overlay pb-5 px-4 d-flex align-items-end text-center"
-            >
-              <p class="card-text fw-bold">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+              <p class="card-text fw-bold fs-5">
+                {{ card.text }}
               </p>
             </div>
           </div>
@@ -78,6 +45,41 @@ import NewsletterComponent from "./NewsletterComponent.vue";
 export default {
   components: { NewsletterComponent },
   name: "BlogSection",
+  data() {
+    return {
+      arrCards: [
+        {
+          img: "news-1.jpg",
+          text: `Increasing creativity is possible for everyone`,
+          visibile: true,
+        },
+        {
+          img: "news-2.jpg",
+          text: "Because market research is part of the business plan",
+          visibile: true,
+        },
+        {
+          img: "news-3.jpg",
+          text: "Working from home is now a trend",
+          visibile: true,
+        },
+        {
+          img: "news-4.jpg",
+          text: `This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.`,
+          visibile: false,
+        },
+        {
+          img: "news-5.jpg",
+          text: `This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.`,
+          visibile: false,
+        },
+      ],
+    };
+  },
 };
 </script>
 
