@@ -21,20 +21,22 @@
           class="col"
           v-show="card.visibile"
         >
-          <div class="card border-0 bg-dark text-white">
-            <img
-              :src="require(`./../assets/img/` + card.img)"
-              class="card-img opacity-50"
-              alt="..."
-            />
-            <div
-              class="card-img-overlay pb-5 px-4 d-flex align-items-end text-center"
-            >
-              <p class="card-text fw-bold fs-5">
-                {{ card.text }}
-              </p>
+          <a href="#">
+            <div class="card border-0 bg-dark text-white">
+              <img
+                :src="require(`./../assets/img/` + card.img)"
+                class="card-img opacity-50"
+                alt="..."
+              />
+              <div
+                class="card-img-overlay pb-5 px-4 d-flex align-items-end text-center"
+              >
+                <p class="card-text fw-bold fs-5">
+                  {{ card.text }}
+                </p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
