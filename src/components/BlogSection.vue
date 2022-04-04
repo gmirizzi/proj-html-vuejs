@@ -1,5 +1,5 @@
 <template>
-  <section id="blog" class="pt-5">
+  <section id="blog" class="pt-3">
     <div class="container py-5">
       <div class="etichetta">our editorial content</div>
       <h1 class="fw-bold my-4">
